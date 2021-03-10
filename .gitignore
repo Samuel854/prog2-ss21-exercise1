@@ -207,3 +207,6 @@ TrafficLight.iml
 .idea/.gitignore
 .idea/description.html
 .idea/project-template.xml
+/src/main/java/MyClass.java
+/src/test/java/CheckPasswordTest.java
+/src/main/java/CheckPassword.java
