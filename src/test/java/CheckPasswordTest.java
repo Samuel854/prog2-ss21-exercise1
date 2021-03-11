@@ -86,7 +86,7 @@ public class CheckPasswordTest {
     @Test
     void validPassword5_LowerCase() { //Lowercase?
         CheckPassword checkPassword = new CheckPassword();
-        boolean actual = checkPassword.validPassword_Lower("helloworld");
+        boolean actual = checkPassword.validPassword_Lower("Helloworld124#");
         assertTrue(actual);
     }
 
@@ -107,15 +107,15 @@ public class CheckPasswordTest {
     @Test
     void validPassword6_No_Special_Characters() { //Use of given special characters.
         CheckPassword checkPassword = new CheckPassword();
-        boolean actual = checkPassword.validPassword_Special("Helloworld124");
+        boolean actual = checkPassword.validPassword_Special("Helloworld");
         assertFalse(actual);
     }
 
     @Test
     void validPassword6_Forbidden_Special_Characters() { //Use of given special characters.
         CheckPassword checkPassword = new CheckPassword();
-        boolean actual = checkPassword.validPassword_No_Special("Helloworld124&");
-        assertFalse(actual);
+        boolean actual = checkPassword.validPassword_No_Special("Helloworld124+");
+        assertTrue(actual);
     }
 
     @Test
